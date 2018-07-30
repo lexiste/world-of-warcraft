@@ -1,0 +1,69 @@
+Thanks:
+/gr So long, and thanks for all the fish.
+
+Drums Up
+#showtooltip
+/yell Fake HERO ... drums up ... Enjoy!
+/use Drums of the Mountain
+
+Happy Holidays
+/i Happy New Year  to all, and to all a good night!
+/s Happy New Year to all, and to all a good night!
+/gr Happy New Year to all, and to all a good night!
+
+Mark Skull
+#showtooltip
+/script SetRaidTarget("mouseover",8)
+
+Mark X
+#showtooltip
+/script SetRaidTarget("mouseover",7)
+
+QQ Moar
+/gr                           QQ moar!
+/gr    E .· ` ' / ·. F       Your tears
+/gr                            fuel me.
+
+Raid Mark Clear All: /clearworldmarker all
+
+Track Humanoids
+/run for i=1,GetNumTrackingTypes() do local x,_,y=GetTrackingInfo(i) if x==GetSpellInfo(19883) then SetTracking(i, not y) z='OFF' r=1 g=1 if not y then z='ON' r=0 g=1 end DEFAULT_CHAT_FRAME:AddMessage("| Track Humanoids | "..z,r,g,0) end end
+
+
+Hunter Macros
+::opener
+#showtooltip
+/cast [@focus,help,nodead][@pet,exists] Misdirection
+/startattack
+/cast Cobra Shot
+/petattack
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+
+::turtle up
+#showtooltip Aspect of the Turtle
+/cancelaura Aspect of the Turtle
+/cast Aspect of the Turtle
+
+::counter focus
+#showtooltip Counter Shot
+/cast [@focus,exists,harm,nodead][] Counter Shot
+
+::feign death
+#showtooltip Feign Death
+/stopcasting
+/stopcasting
+/cast Play Dead
+/cast Feign Death
+
+::mouseover freeze
+#showtooltip
+/cast [@cursor] Freezing Trap
+
+::mouseover tar
+#showtooltip
+/cast [@cursor] Tar Trap
+
+
+Shaman Macros
+Mage Macros
