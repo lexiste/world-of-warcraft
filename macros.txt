@@ -66,4 +66,34 @@ Hunter Macros
 
 
 Shaman Macros
+::chain heal
+#showtooltip
+/cast [@mouseover,help,nodead] [@player] Chain Heal
+
+::Earthen Wind totem
+#showtooltip
+/stopcasting
+/cast [@cursor] Earthen Wall Totem
+
+::Healing Rain
+#showtooltip
+/stopcasting
+/cast [@cursor] Healing Rain
+
+::Healing Surge
+#showtooltip Healing Surge
+/cast [@mouseover,help,nodead][@player] Healing Surge
+
+::Hex Focus
+#showtooltip [@focus,harm] [] Hex
+/stopcasting
+/clearfocus [modifier:shift][@focus,dead][@focus,noexists]
+/focus [@focus,noexists]
+/script SetRaidTarget("focus", 2)
+/cast [@focus] Hex
+
+::Rip & Shock
+#showtooltip
+/cast [@mouseover,help] Riptide; [@mouseover,harm] Flame Shock; [help] Riptide; Flame Shock
+
 Mage Macros
